@@ -1,0 +1,306 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\usepackage{multicol}
+
+\begin{document}
+
+\header{John} { Dyer}{Manager of Platform Operations} % Your name and current job title/field
+
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+  \section{contact}
+    3060 Salisbury Dr.
+    Alpharetta, GA 30004
+    USA
+    ~
+    +1 (407) 474 0214
+    ~
+    \href{mailto:johntdyer@gmail.com}{johntdyer@gmail.com}
+    \href{http://johntdyer.com}{http://johntdyer.com}
+    \href{http://www.linkedin.com/in/johntdyer}{linkedin://johntdyer}
+    \href{https://github.com/johntdyer}{github://johntdyer}
+    \section{programming}
+      {\color{red} $\varheartsuit$} Ruby, Go, Java, Javascript
+    \section{tools}
+      {\color{red} $\varheartsuit$} Sublime, Vim, Eclipse, Jenkins, Chef
+    \section{technologies}
+      {\color{red} $\varheartsuit$} Configuration management, Tool development, Automation, Continuos integration, Amazon Web Services, Monitoring
+\end{aside}
+
+%
+%  Objective
+%
+
+\section{objective}
+Obtain employment with an innovative technology firm: Wherein I am responsible for design and implementing creative and innovative solutions to complex technological and business problems.
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+  \begin{entrylist}
+    \entry
+      {2012--Now}
+      {Tropo,Inc}
+      {Menlo Park, California}
+      {\emph{Manager of Platform Operations} \\
+        Managed a distributed team of system engineers responsible for a real time communications platform deployed in Tropo's own cloud as well as 'on-premise' in global telco carriers facilities.
+
+        Responsibilities:
+        \begin{itemize}
+          \item Handling all management duties for the operations team, including but not limited to hiring, scheduling, and performance evaluations.
+          \item Conduct incident reviews with team and provide executive summaries for senior leadership.
+        \end{itemize}
+
+        Detailed achievements:
+        \begin{itemize}
+          \item Lead migration from in-house configuration management solution to Chef
+          \item Integrated Chef into continuous integration process to ensure
+          \item Migrated Tropo.com service from a two site, collocated solution, to a hybrid deployment using IBM's Softlayer and Amazon Web Services.
+          \item Migrated Tropo from legacy Nagios / Solarwinds monitoring to Sensu for all monitoring.
+          \item Implemented formal incident review process for all outages.
+          \item Create internal tooling to help facilitate optional responsibilities for the Tropo platform:
+            \begin{itemize}
+              \item API's for managing call routing
+              \item call detail report recovery and delivery
+              \item Monitoring and alerting via custom tooling
+              \item fraud / abuse prevention
+            \end{itemize}
+        \end{itemize}}
+    \entry
+      {2008--2012}
+      {Voxeo Corporation}
+      {Orlando, FL}
+      {\emph{Customer Engineer} \\
+      Rated `truly distinctive` for Analytical Skills and Teamwork.
+
+      Responsibilities:
+      \begin{itemize}
+        \item Author documentation \& blog content to help illustrate new platform features and development techniques.
+        \item Developer Evangelism by representing Tropo and Phono brands at dozens of national conferences \& events.
+        \item Manage and resolve escalated customer issues for Prophecy, Tropo, Phono, and SMSified, and Prism application server.
+        \item Support and train developers and enterprise users on over ten separate markups and platforms.
+      \end{itemize}}
+
+    \entry
+      {2008-2012}
+      {Krumpt Solutions, LLC}
+      {Orlando, FL}
+      {\emph{Owner} \\
+      Sole proprietorship consulting company.  Managed IT operations Central Florida Pulmonary Group.  Staff of 150 employees, and 15 practitioners.  Accomplished included migration to GoogleApps from  Exchange 2003. Build out of new 6000sq ft facility, which included MPLS site to site network, and multiple diagnostic labs, including Mitsubishi CT scanner.}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% Technologies
+%----------------------------------------------------------------------------------------
+
+\section{technologies}
+
+  \textbf{operating systems}
+    \begin{multicols}{3}
+      \begin{itemize}
+        \item Centos 5 / 6
+        \item OSX Server
+        \item Windows Server 2k3 / 2k8
+        \item Ubuntu
+      \end{itemize}
+    \end{multicols}
+
+  \textbf{servers}
+    \begin{multicols}{3}
+      \begin{itemize}
+        \item Prophecy voice server
+        \item VoiceObjects server
+        \item Prism application server
+        \item Apache
+        \item Nginx
+        \item IIS
+        \item HAProxy
+        \item JBoss \& Tomcat
+        \item Sinatra
+      \end{itemize}
+    \end{multicols}
+
+  \textbf{services}
+    \begin{multicols}{3}
+      \begin{itemize}
+        \item Amazon S3
+        \item Amazon EC2
+        \item Amazon VPC
+        \item Amazon Autoscaling
+        \item Softlayer
+        \item Heroku
+        \item Tropo \& Twilio
+        \item JIRA
+        \item Confluence
+        \item Logstash
+        \item Graphite
+        \item Sensu
+        \item Nagios
+        \item Active Directory 2003
+        \item Logstash
+        \item EjabberD
+        \item OpenVPN server
+        \item Jenkins
+        \item MySQL
+        \item Named
+        \item ActiveMQ
+      \end{itemize}
+    \end{multicols}
+
+  \textbf{languages \& tools}
+    \begin{multicols}{3}
+      \begin{itemize}
+        \item Go
+        \item Chef
+        \item Ruby / RoR 3.x
+        \item Javascript / jQuery
+        \item PHP
+        \item Bash
+        \item Node.js
+        \item Java
+        \item SSML / SRGS / GRXML
+        \item VoiceXML \& CCXML
+        \item GIT
+        \item AppleScript
+      \end{itemize}
+    \end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+  \begin{entrylist}
+    \entry
+      {2004-2007}
+      {Bachelor of Science {\normalfont Management Information Systems}}
+      {University of Central Florida}
+      {Duel minors in Finance and Hospitality Management }
+    \entry
+      {2000-2003}
+      {Associate {\normalfont of Arts}}
+      {Valencia College}
+      {}
+  \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{certifications \& awards}
+  \textbf{certifications}
+    \begin{multicols}{2}
+      \begin{itemize}
+        \item Microsoft Certified Systems Engineer
+        \item VoiceXML Certified Developer
+        \item VoiceObjects Certified Developer
+        \item CompTIA Security+
+      \end{itemize}
+    \end{multicols}
+
+    \begin{entrylist}
+      \textbf{awards}\\
+        \entry
+          {2011 \& 2012}
+          {Customer Obsession Award}
+          {Voxeo Corporation}
+          {Awarded employee that demonstrates exceptional customer service.}
+    \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{community involvement}
+
+  \begin{entrylist}
+    \entry
+      {Current}
+      {Co-Organizer}
+      {Devops Days Atlanta 2013 \& 2014}
+      {Part of core organizing committee for first Devops Days in Atlanta; a single track 2 day conference with over 170 attendees.}
+    \entry
+      {Current}
+      {Co-Organizer}
+      {Devops Atlanta}
+      {Organizer for Devops Atlanta, a monthly Meetup with talks by on various topics related to automation and the DevOps culture. The group has over 700 members in the Atlanta area. }
+    \entry
+      {2010}
+      {Co-Organizer}
+      {Coding Dojo}
+  {co-organizer of Orlando Coding Dojo group, a monthly social group which developers came together so work on simple problems in various programming languages.}
+  \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECT SECTION
+%----------------------------------------------------------------------------------------
+
+\section{projects}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item
+        \href{https://github.com/johntdyer/vagrant-awsinfo}{Vagrant-awsinfo}
+      \item
+        \href{https://github.com/johntdyer/billwise4r}{billwise4r (maintainer)}
+      \item
+        \href{https://github.com/johntdyer/ilookup}{ilookup}
+      \item
+        \href{https://github.com/johntdyer/tropo}{Tropo.go cli tool}
+      \item
+        \href{https://github.com/johntdyer/parse\_cdr}{Aspect parse\_cdr}
+      \item
+        \href{https://bitbucket.org/voxeolabs/prism-chef}{prism-chef}
+      \item Chef contributor
+      \item Sensu contributor
+    \end{itemize}
+  \end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+  \begin{description}
+    \item[\textbf{professional:}]
+      \item[$\bullet$] Keeping on top of new operations tools, software, and processes
+      \item[$\bullet$] Experimenting with new languages
+      \item[$\bullet$] Blogging
+    \item[\textbf{personal:}]
+      \item[$\bullet$] Photography
+      \item[$\bullet$] Cooking
+      \item[$\bullet$] Traveling
+  \end{description}
+\end{document}
